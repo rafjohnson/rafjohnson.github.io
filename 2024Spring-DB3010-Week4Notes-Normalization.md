@@ -9,6 +9,7 @@
 Bad version, not normalized at all.
 
 **Table:Publications**
+
 Author |Title|Genre|Book |PageLocation|CopyrightYear|ISBN
 ---|---|---|---|---|---|---
 |Tookey,Skoda
@@ -38,6 +39,7 @@ Data only appears once in any given table.
 
 
 **Table:  Author**
+
 | Author | AuthorID | AuthorName | Phone | PenName |
 |---|---|---|---|---|
 |1| Tookey  
@@ -45,32 +47,39 @@ Data only appears once in any given table.
 
 
 **Table: Write** 
+
 |AuthorID|StoryID|
 |---|---|
 |1|1
 |2|1
 
 **Table: Publications**
+
 |StoryID|Title|Page|
 |---|---|---|
 1|My Story|102
 
 **Table:Book**
+
 |BookID|Title|Copyright|ISBN
 |---|---|---|---|
 1|Story Book|2022|123-345-567
 
+
 **Table: Story_Book**
+
 |StoryID|BookID|
 |---|---|
 1|1
 
 **Table: Genre**
+
 |GenreID|GenreName|
 |---|---|
 1|Biography
 
 **Table: Story_Genre**
+
 |GenreID|StoryID|
 |---|---|
 1|1
@@ -93,11 +102,11 @@ Data only appears once in any given table.
  - key defines a group
  - don't need to know this right now
 
- # Projection Join normal form problem
+# Projection Join normal form problem
  - Splitting a group, you can't rejoin to create original example
 
 
- # Midterm Review 
+# Midterm Review 
  - March 12-ish?, during lab session
 - Breakout room, by yourself, screensharing. 
 
@@ -109,9 +118,9 @@ Data only appears once in any given table.
 Questions about queries, writing queries, explain concepts.
 FD - File determinancy (arrows, what determines what)
 
-![Midterm FD Example](/images/FDMidtermQ-2024-02-13%20100242.png)
+![Midterm FD Example](FDMidtermQ.png)
 
-![Midterm table example](/images/InconsistensyTable-2024-02-13%20101213.png)
+![Midterm table example](InconsistensyTable.png)
 
 2. Look for inconsistency
 * Starting with B&A determine p 
@@ -174,6 +183,6 @@ FD - File determinancy (arrows, what determines what)
 
  * When it gets closer to the midterm, go through these and practice.
 
- # Project:
+# Project:
  When done designing tables, send in to check for normalization. 
 
